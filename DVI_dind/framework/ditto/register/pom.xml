@@ -17,7 +17,7 @@
 		<maven.compiler.target>11</maven.compiler.target>
 		<mainClass>it.unige.fdt.dittoregister.App</mainClass>
 		<ditto.version>1.5.1</ditto.version>
-		<jackson.version>2.12.1</jackson.version>
+		<jackson.version>2.13.5</jackson.version>
 	</properties>
 
 	<dependencies>

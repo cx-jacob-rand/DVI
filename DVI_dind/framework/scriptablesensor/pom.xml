@@ -19,7 +19,7 @@
 		<commonsMath.version>3.6.1</commonsMath.version>
 		<ditto.version>1.5.1</ditto.version>
 		<graal.version>21.3.0</graal.version>
-		<jackson.version>2.13.0</jackson.version>
+		<jackson.version>2.13.5</jackson.version>
 	</properties>
 
 	<dependencies>
