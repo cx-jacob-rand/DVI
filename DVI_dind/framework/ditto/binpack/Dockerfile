@@ -19,5 +19,7 @@ FROM eclipse-temurin:16-jdk-alpine
 COPY --from=build /opt/ditto-binpack/target/lib /opt/lib
 COPY --from=build /opt/ditto-binpack/target/binpack-*.jar /opt/ditto-binpack.jar
 RUN apk add --no-cache iputils iproute2
+RUN addgroup -S appuser && adduser -S -G appuser appuser
 WORKDIR /opt
+USER appuser
 ENTRYPOINT [ "java", "-jar", "/opt/ditto-binpack.jar" ]

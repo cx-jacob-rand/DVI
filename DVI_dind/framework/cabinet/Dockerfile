@@ -8,5 +8,6 @@ RUN pip install -r requirements.txt
 COPY src/ /opt/cabinet/src
 
 COPY entrypoint.sh /opt/cabinet
-RUN chmod +x entrypoint.sh
+RUN chmod +x entrypoint.sh && adduser -D -u 1001 appuser && chown -R appuser /opt/cabinet
+USER appuser
 ENTRYPOINT [ "/opt/cabinet/entrypoint.sh" ]
