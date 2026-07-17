@@ -1,4 +1,4 @@
-FROM camunda/camunda-bpm-platform:tomcat-7.15.0 AS camunda
+FROM camunda/camunda-bpm-platform:tomcat-7.20.0 AS camunda
 FROM tomcat:9-jdk21-openjdk-bullseye AS run
 
 RUN apt-get update -qq && apt-get install -y curl wait-for-it iputils-ping iproute2
